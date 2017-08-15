@@ -12,6 +12,8 @@
 		25C160081F430CE400A9D24A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C160061F430CE400A9D24A /* Main.storyboard */; };
 		25C1600A1F430CE400A9D24A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25C160091F430CE400A9D24A /* Assets.xcassets */; };
 		25C1600D1F430CE400A9D24A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C1600B1F430CE400A9D24A /* LaunchScreen.storyboard */; };
+		25C160151F432A5E00A9D24A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C160141F432A5D00A9D24A /* RegisterViewController.swift */; };
+		25C160171F432D0C00A9D24A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C160161F432D0C00A9D24A /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		25C160091F430CE400A9D24A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25C1600C1F430CE400A9D24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25C1600E1F430CE400A9D24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25C160141F432A5D00A9D24A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		25C160161F432D0C00A9D24A /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				25C160091F430CE400A9D24A /* Assets.xcassets */,
 				25C1600B1F430CE400A9D24A /* LaunchScreen.storyboard */,
 				25C1600E1F430CE400A9D24A /* Info.plist */,
+				25C160141F432A5D00A9D24A /* RegisterViewController.swift */,
+				25C160161F432D0C00A9D24A /* APIManager.swift */,
 			);
 			path = Octopus;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25C160171F432D0C00A9D24A /* APIManager.swift in Sources */,
+				25C160151F432A5E00A9D24A /* RegisterViewController.swift in Sources */,
 				25C160051F430CE400A9D24A /* ViewController.swift in Sources */,
 				25C160031F430CE400A9D24A /* AppDelegate.swift in Sources */,
 			);
