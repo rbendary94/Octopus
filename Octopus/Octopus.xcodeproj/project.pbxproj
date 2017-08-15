@@ -24,8 +24,8 @@
 		25C160091F430CE400A9D24A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25C1600C1F430CE400A9D24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25C1600E1F430CE400A9D24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25C160141F432A5D00A9D24A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		25C160161F432D0C00A9D24A /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		E3820E361F43202E00B33E6A /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E3820E381F43278200B33E6A /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 				25C160091F430CE400A9D24A /* Assets.xcassets */,
 				25C1600B1F430CE400A9D24A /* LaunchScreen.storyboard */,
 				25C1600E1F430CE400A9D24A /* Info.plist */,
-				25C160141F432A5D00A9D24A /* RegisterViewController.swift */,
-				25C160161F432D0C00A9D24A /* APIManager.swift */,
+				E3820E361F43202E00B33E6A /* SignInViewController.swift */,
+				E3820E381F43278200B33E6A /* PopUpViewController.swift */,
 			);
 			path = Octopus;
 			sourceTree = "<group>";
@@ -147,6 +147,8 @@
 				25C160151F432A5E00A9D24A /* RegisterViewController.swift in Sources */,
 				25C160051F430CE400A9D24A /* ViewController.swift in Sources */,
 				25C160031F430CE400A9D24A /* AppDelegate.swift in Sources */,
+				E3820E371F43202E00B33E6A /* SignInViewController.swift in Sources */,
+				E3820E391F43278200B33E6A /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +314,7 @@
 				25C160131F430CE400A9D24A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
