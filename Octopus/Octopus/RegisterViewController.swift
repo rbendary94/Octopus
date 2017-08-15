@@ -22,13 +22,17 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let tapGesture = UITapGestureRecognizer(target: self , action: #selector (didTap(gesture: )))
+        view.addGestureRecognizer(tapGesture)
         // Do any additional setup after loading the view.
+        self.automaticallyAdjustsScrollViewInsets = false
     }
     
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         addObservers()
+       
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -71,7 +75,6 @@ class RegisterViewController: UIViewController {
     func keyboardWillHide (notification: Notification){
         scrollView.contentInset = UIEdgeInsets.zero
         scrollView.scrollIndicatorInsets = UIEdgeInsets.zero
-        
         view.setNeedsLayout()
     }
     

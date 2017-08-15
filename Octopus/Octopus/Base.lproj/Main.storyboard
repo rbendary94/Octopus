@@ -132,6 +132,9 @@
                             <constraint firstItem="YfR-DS-3LB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y8D-GL-r61"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="forgotPasswordLabel" destination="8pm-Kd-6ur" id="Oip-Jh-rcS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -177,7 +180,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="dismissPopUp:" destination="0MX-bL-1d0" eventType="touchUpInside" id="0Kc-cG-wji"/>
+                                            <action selector="dismissPopUp:" destination="0MX-bL-1d0" eventType="touchUpInside" id="GyB-kJ-ZR8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -212,7 +215,7 @@
         <!--Register View Controller-->
         <scene sceneID="K8I-C8-mef">
             <objects>
-                <viewController id="oSs-FV-Hs4" customClass="RegisterViewController" customModule="Octopus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="oSs-FV-Hs4" customClass="RegisterViewController" customModule="Octopus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hin-x1-RvZ"/>
                         <viewControllerLayoutGuide type="bottom" id="kxf-t9-PGN"/>
@@ -222,7 +225,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cu-3d-HBx">
-                                <rect key="frame" x="16" y="20" width="296" height="548"/>
+                                <rect key="frame" x="16" y="64" width="296" height="504"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7sJ-vE-bsb">
                                         <rect key="frame" x="24" y="296" width="241" height="35"/>
@@ -372,7 +375,7 @@
                         <constraints>
                             <constraint firstItem="kxf-t9-PGN" firstAttribute="top" secondItem="4cu-3d-HBx" secondAttribute="bottom" id="101-AF-g0k"/>
                             <constraint firstItem="4cu-3d-HBx" firstAttribute="centerX" secondItem="A9Q-cM-x3s" secondAttribute="centerX" constant="4" id="CFw-oO-cVF"/>
-                            <constraint firstItem="4cu-3d-HBx" firstAttribute="top" secondItem="Hin-x1-RvZ" secondAttribute="bottom" constant="-44" id="RGK-1y-VCi"/>
+                            <constraint firstItem="4cu-3d-HBx" firstAttribute="top" secondItem="Hin-x1-RvZ" secondAttribute="bottom" id="RGK-1y-VCi"/>
                             <constraint firstItem="4cu-3d-HBx" firstAttribute="leading" secondItem="A9Q-cM-x3s" secondAttribute="leadingMargin" id="XZ3-Au-Dku"/>
                         </constraints>
                     </view>
