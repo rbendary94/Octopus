@@ -22,13 +22,11 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tapGesture = UITapGestureRecognizer(target: self , action: #selector (didTap(gesture: )))
-        view.addGestureRecognizer(tapGesture)
+        addTap()
         // Do any additional setup after loading the view.
         self.automaticallyAdjustsScrollViewInsets = false
     }
     
-
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         addObservers()
@@ -40,10 +38,6 @@ class RegisterViewController: UIViewController {
         removeObserver()
     }
 
-    func didTap(gesture : UIGestureRecognizer){
-        view.endEditing(true)
-    }
-
     func addObservers(){
         NotificationCenter.default.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: nil) {
             notification in
@@ -52,7 +46,7 @@ class RegisterViewController: UIViewController {
         NotificationCenter.default.addObserver(forName: .UIKeyboardWillHide, object: nil, queue: nil) {
             notification in
             self.keyboardWillHide(notification: notification)
-        
+            
         }
     }
     
@@ -60,24 +54,23 @@ class RegisterViewController: UIViewController {
         NotificationCenter.default.removeObserver(self)
     }
     
+    
     func keyboardWillShow (notification: Notification){
-       guard let userInfo = notification.userInfo,
-        let frame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
-       else {
-          return
-       }
-
+        guard let userInfo = notification.userInfo,
+            let frame = (userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+            else {
+                return
+        }
         let contentInsent = UIEdgeInsets(top: 0, left: 0 , bottom: frame.height + 20, right: 0)
-        scrollView.contentInset = contentInsent
+        self.scrollView.contentInset = contentInsent
         
     }
     
     func keyboardWillHide (notification: Notification){
-        scrollView.contentInset = UIEdgeInsets.zero
-        scrollView.scrollIndicatorInsets = UIEdgeInsets.zero
+        self.scrollView.contentInset = UIEdgeInsets.zero
+        self.scrollView.scrollIndicatorInsets = UIEdgeInsets.zero
         view.setNeedsLayout()
     }
-    
     
     
 }

@@ -23,3 +23,24 @@ class ViewController: UIViewController {
 
 }
 
+extension UIViewController {
+    
+    func addTap(){
+        let tapGesture = UITapGestureRecognizer(target: self , action: #selector (didTap(gesture: )))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    func didTap(gesture : UIGestureRecognizer){
+        view.endEditing(true)
+    }
+    
+   
+    
+  
+    
+    
+   
+    
+ 
+
+}
