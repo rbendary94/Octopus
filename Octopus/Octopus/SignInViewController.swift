@@ -11,7 +11,6 @@ import UIKit
 class SignInViewController: UIViewController {
 
     
-    @IBOutlet var forgotPasswordLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
