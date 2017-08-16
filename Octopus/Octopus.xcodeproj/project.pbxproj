@@ -141,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3751FEE1F4444C500674BB4 /* Lawyer.storyboard in Resources */,
 				25C1600D1F430CE400A9D24A /* LaunchScreen.storyboard in Resources */,
 				25C1600A1F430CE400A9D24A /* Assets.xcassets in Resources */,
 				25C160081F430CE400A9D24A /* Main.storyboard in Resources */,
