@@ -16,7 +16,6 @@ class SignInViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showPopUp))
         forgotPasswordLabel.isUserInteractionEnabled=true
         forgotPasswordLabel.addGestureRecognizer(tapGesture)

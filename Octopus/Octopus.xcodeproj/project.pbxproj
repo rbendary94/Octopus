@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16A725AEDF644CEF1B8237B5 /* Pods_Octopus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75B6463661BA11FBCDCD43A /* Pods_Octopus.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		25AC16361F433E8500DEF29D /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC16351F433E8500DEF29D /* PopUpViewController.swift */; };
 		25AC16381F433EAD00DEF29D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC16371F433EAD00DEF29D /* SignInViewController.swift */; };
 		25AC163A1F4343F800DEF29D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC16391F4343F800DEF29D /* APIManager.swift */; };
@@ -18,6 +19,9 @@
 		25C160151F432A5E00A9D24A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		25C160171F432D0C00A9D24A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		25C160191F4338D800A9D24A /* ClientRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C160181F4338D800A9D24A /* ClientRegisterViewController.swift */; };
+		E3751FF01F44467500674BB4 /* Lawyer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3751FEF1F44467500674BB4 /* Lawyer.storyboard */; };
+		E3751FF21F445C8E00674BB4 /* LawyerTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3751FF11F445C8E00674BB4 /* LawyerTabBarViewController.swift */; };
+		E3751FF41F445F6B00674BB4 /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3751FF31F445F6B00674BB4 /* ESTabBarController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,12 @@
 		25C1600C1F430CE400A9D24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25C1600E1F430CE400A9D24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25C160181F4338D800A9D24A /* ClientRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientRegisterViewController.swift; sourceTree = "<group>"; };
+		9489BD886703C725B96A21D0 /* Pods-Octopus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Octopus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Octopus/Pods-Octopus.release.xcconfig"; sourceTree = "<group>"; };
+		A75B6463661BA11FBCDCD43A /* Pods_Octopus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Octopus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3751FEF1F44467500674BB4 /* Lawyer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lawyer.storyboard; sourceTree = "<group>"; };
+		E3751FF11F445C8E00674BB4 /* LawyerTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerTabBarViewController.swift; sourceTree = "<group>"; };
+		E3751FF31F445F6B00674BB4 /* ESTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESTabBarController.framework; path = "Pods/../build/Release-iphoneos/ESTabBarController/ESTabBarController.framework"; sourceTree = "<group>"; };
+		E5347FFFDA4D9CB69EE2C1AA /* Pods-Octopus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Octopus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Octopus/Pods-Octopus.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3751FF41F445F6B00674BB4 /* ESTabBarController.framework in Frameworks */,
+				16A725AEDF644CEF1B8237B5 /* Pods_Octopus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +62,8 @@
 			children = (
 				25C160011F430CE400A9D24A /* Octopus */,
 				25C160001F430CE400A9D24A /* Products */,
+				A45FD84AD8AFBFE9235E8F51 /* Frameworks */,
+				3E0CB4E5B60BFED76070E977 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +88,28 @@
 				25AC16351F433E8500DEF29D /* PopUpViewController.swift */,
 				25AC16371F433EAD00DEF29D /* SignInViewController.swift */,
 				25AC16391F4343F800DEF29D /* APIManager.swift */,
-				E3751FED1F4444C500674BB4 /* Lawyer.storyboard */,
+				E3751FEF1F44467500674BB4 /* Lawyer.storyboard */,
+				E3751FF11F445C8E00674BB4 /* LawyerTabBarViewController.swift */,
 			);
 			path = Octopus;
+			sourceTree = "<group>";
+		};
+		3E0CB4E5B60BFED76070E977 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5347FFFDA4D9CB69EE2C1AA /* Pods-Octopus.debug.xcconfig */,
+				9489BD886703C725B96A21D0 /* Pods-Octopus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A45FD84AD8AFBFE9235E8F51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3751FF31F445F6B00674BB4 /* ESTabBarController.framework */,
+				A75B6463661BA11FBCDCD43A /* Pods_Octopus.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25C160111F430CE400A9D24A /* Build configuration list for PBXNativeTarget "Octopus" */;
 			buildPhases = (
+				64D7FE7EF0E72C1393B7DDA9 /* [CP] Check Pods Manifest.lock */,
 				25C15FFB1F430CE400A9D24A /* Sources */,
 				25C15FFC1F430CE400A9D24A /* Frameworks */,
 				25C15FFD1F430CE400A9D24A /* Resources */,
+				C52760F571D35472074C7D90 /* [CP] Embed Pods Frameworks */,
+				AD1FD4D58763F471293967CF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -111,7 +147,7 @@
 				TargetAttributes = {
 					25C15FFE1F430CE400A9D24A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = RGBTF44XQU;
+						DevelopmentTeam = ZUGQUHK8J8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,7 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3751FEE1F4444C500674BB4 /* Lawyer.storyboard in Resources */,
+				E3751FF01F44467500674BB4 /* Lawyer.storyboard in Resources */,
 				25C1600D1F430CE400A9D24A /* LaunchScreen.storyboard in Resources */,
 				25C1600A1F430CE400A9D24A /* Assets.xcassets in Resources */,
 				25C160081F430CE400A9D24A /* Main.storyboard in Resources */,
@@ -147,6 +183,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64D7FE7EF0E72C1393B7DDA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Octopus-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD1FD4D58763F471293967CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Octopus/Pods-Octopus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C52760F571D35472074C7D90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Octopus/Pods-Octopus-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController/ESTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Octopus/Pods-Octopus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		25C15FFB1F430CE400A9D24A /* Sources */ = {
@@ -161,6 +253,7 @@
 				25C160151F432A5E00A9D24A /* (null) in Sources */,
 				25C160051F430CE400A9D24A /* ViewController.swift in Sources */,
 				25C160031F430CE400A9D24A /* AppDelegate.swift in Sources */,
+				E3751FF21F445C8E00674BB4 /* LawyerTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +376,18 @@
 		};
 		25C160121F430CE400A9D24A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5347FFFDA4D9CB69EE2C1AA /* Pods-Octopus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RGBTF44XQU;
+				DEVELOPMENT_TEAM = ZUGQUHK8J8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/ESTabBarController",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
 				INFOPLIST_FILE = Octopus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.EverestMinds.Octopus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EverestMinds.OctopusElawyer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -296,12 +395,18 @@
 		};
 		25C160131F430CE400A9D24A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9489BD886703C725B96A21D0 /* Pods-Octopus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = RGBTF44XQU;
+				DEVELOPMENT_TEAM = ZUGQUHK8J8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/ESTabBarController",
+					"$(PROJECT_DIR)/build/Release-iphoneos",
+				);
 				INFOPLIST_FILE = Octopus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.EverestMinds.Octopus;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EverestMinds.OctopusElawyer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
