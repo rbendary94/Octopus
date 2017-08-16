@@ -18,6 +18,7 @@
 		25C160151F432A5E00A9D24A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		25C160171F432D0C00A9D24A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		25C160191F4338D800A9D24A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C160181F4338D800A9D24A /* RegisterViewController.swift */; };
+		E3751FEE1F4444C500674BB4 /* Lawyer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3751FED1F4444C500674BB4 /* Lawyer.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		25C1600C1F430CE400A9D24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25C1600E1F430CE400A9D24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25C160181F4338D800A9D24A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E3751FED1F4444C500674BB4 /* Lawyer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lawyer.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				25AC16351F433E8500DEF29D /* PopUpViewController.swift */,
 				25AC16371F433EAD00DEF29D /* SignInViewController.swift */,
 				25AC16391F4343F800DEF29D /* APIManager.swift */,
+				E3751FED1F4444C500674BB4 /* Lawyer.storyboard */,
 			);
 			path = Octopus;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3751FEE1F4444C500674BB4 /* Lawyer.storyboard in Resources */,
 				25C1600D1F430CE400A9D24A /* LaunchScreen.storyboard in Resources */,
 				25C1600A1F430CE400A9D24A /* Assets.xcassets in Resources */,
 				25C160081F430CE400A9D24A /* Main.storyboard in Resources */,
