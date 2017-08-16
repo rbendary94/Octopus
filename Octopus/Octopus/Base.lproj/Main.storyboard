@@ -73,7 +73,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Google"/>
                                 <connections>
-                                    <segue destination="tId-OU-NAY" kind="show" id="Pyc-Fi-hOx"/>
+                                    <segue destination="h7Q-dE-9ys" kind="show" id="EhJ-Vv-6yn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="or" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfR-DS-3LB">
@@ -164,7 +164,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send you an email with a new password to login with " lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FhY-ys-Ivx">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will send you an email with a new password to login with " lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="FhY-ys-Ivx">
                                         <rect key="frame" x="16" y="32" width="240" height="27"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
                                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -211,6 +211,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2h-Uq-LBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="559" y="103"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jlb-wj-PUW">
+            <objects>
+                <viewController id="svj-Ab-9JF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uof-Ze-zWp"/>
+                        <viewControllerLayoutGuide type="bottom" id="ika-6S-In7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z5i-7K-nzy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTt-Nj-Kns">
+                                <rect key="frame" x="40" y="264" width="240" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.74901960779999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="JOIN AS LAWYER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EFA-p4-sUe" kind="show" id="ugy-wd-YMf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2A-cx-hDW">
+                                <rect key="frame" x="40" y="318" width="240" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.74901960779999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="JOIN AS CUSTOMER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oSs-FV-Hs4" kind="show" id="grv-FV-uVK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7H-zr-H2v">
+                                <rect key="frame" x="40" y="372" width="240" height="30"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.74901960779999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="BACK BALABEEZO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="rRo-sN-Ip9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="W7H-zr-H2v" firstAttribute="leading" secondItem="z5i-7K-nzy" secondAttribute="leadingMargin" constant="24" id="2Zl-aY-rTp"/>
+                            <constraint firstItem="W7H-zr-H2v" firstAttribute="top" secondItem="k2A-cx-hDW" secondAttribute="bottom" constant="24" id="4U1-DO-X6Y"/>
+                            <constraint firstItem="KTt-Nj-Kns" firstAttribute="top" secondItem="uof-Ze-zWp" secondAttribute="bottom" constant="200" id="7ma-8K-gNG"/>
+                            <constraint firstItem="k2A-cx-hDW" firstAttribute="leading" secondItem="z5i-7K-nzy" secondAttribute="leadingMargin" constant="24" id="CRb-CQ-3Jo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="k2A-cx-hDW" secondAttribute="trailing" constant="24" id="Ezy-74-dHs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KTt-Nj-Kns" secondAttribute="trailing" constant="24" id="Qm3-bs-xJI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="W7H-zr-H2v" secondAttribute="trailing" constant="24" id="XIc-wS-Hp3"/>
+                            <constraint firstItem="k2A-cx-hDW" firstAttribute="top" secondItem="KTt-Nj-Kns" secondAttribute="bottom" constant="24" id="bzv-oP-Wjl"/>
+                            <constraint firstItem="KTt-Nj-Kns" firstAttribute="leading" secondItem="z5i-7K-nzy" secondAttribute="leadingMargin" constant="24" id="sCy-7V-73J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zbH-rS-wmg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kBw-8L-J7n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2310" y="101"/>
         </scene>
         <!--Client Register View Controller-->
         <scene sceneID="K8I-C8-mef">
@@ -286,9 +348,6 @@
                                         <rect key="frame" x="160" y="16" width="104" height="30"/>
                                         <color key="backgroundColor" red="0.92549019607843142" green="0.91764705882352937" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Google"/>
-                                        <connections>
-                                            <segue destination="EFA-p4-sUe" kind="show" id="gll-Fd-Rvi"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4X-0N-9MD">
                                         <rect key="frame" x="23" y="484" width="242" height="40"/>
@@ -398,7 +457,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aem-ep-Y4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2529.375" y="137.32394366197184"/>
+            <point key="canvasLocation" x="3122" y="520"/>
         </scene>
         <!--Lawyer Register View Controller-->
         <scene sceneID="Hvf-2C-Hd8">
@@ -554,27 +613,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tJF-C4-pko" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3356.25" y="136.26760563380282"/>
+            <point key="canvasLocation" x="3122" y="-202"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="YHJ-t1-Pla">
+        <scene sceneID="cdH-2U-l6p">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tId-OU-NAY" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h7Q-dE-9ys" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zUE-d1-Guc">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N7u-97-2zo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.94117647059999998" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="barTintColor" red="0.094117647060000004" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="oSs-FV-Hs4" kind="relationship" relationship="rootViewController" id="64v-13-2eu"/>
+                        <segue destination="svj-Ab-9JF" kind="relationship" relationship="rootViewController" id="sPZ-TZ-VqA"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KE6-Bd-IJ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jLW-SZ-M7X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1531.875" y="137.32394366197184"/>
+            <point key="canvasLocation" x="1547" y="102"/>
         </scene>
     </scenes>
 </document>
