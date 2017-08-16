@@ -17,7 +17,7 @@
 		25C1600D1F430CE400A9D24A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25C1600B1F430CE400A9D24A /* LaunchScreen.storyboard */; };
 		25C160151F432A5E00A9D24A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		25C160171F432D0C00A9D24A /* (null) in Sources */ = {isa = PBXBuildFile; };
-		25C160191F4338D800A9D24A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C160181F4338D800A9D24A /* RegisterViewController.swift */; };
+		25C160191F4338D800A9D24A /* ClientRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C160181F4338D800A9D24A /* ClientRegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +31,7 @@
 		25C160091F430CE400A9D24A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25C1600C1F430CE400A9D24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25C1600E1F430CE400A9D24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25C160181F4338D800A9D24A /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		25C160181F4338D800A9D24A /* ClientRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 				25C160041F430CE400A9D24A /* ViewController.swift */,
 				25C160061F430CE400A9D24A /* Main.storyboard */,
 				25C160091F430CE400A9D24A /* Assets.xcassets */,
-				25C160181F4338D800A9D24A /* RegisterViewController.swift */,
+				25C160181F4338D800A9D24A /* ClientRegisterViewController.swift */,
 				25C1600B1F430CE400A9D24A /* LaunchScreen.storyboard */,
 				25C1600E1F430CE400A9D24A /* Info.plist */,
 				25AC16351F433E8500DEF29D /* PopUpViewController.swift */,
@@ -155,7 +155,7 @@
 				25AC16381F433EAD00DEF29D /* SignInViewController.swift in Sources */,
 				25C160171F432D0C00A9D24A /* (null) in Sources */,
 				25AC16361F433E8500DEF29D /* PopUpViewController.swift in Sources */,
-				25C160191F4338D800A9D24A /* RegisterViewController.swift in Sources */,
+				25C160191F4338D800A9D24A /* ClientRegisterViewController.swift in Sources */,
 				25C160151F432A5E00A9D24A /* (null) in Sources */,
 				25C160051F430CE400A9D24A /* ViewController.swift in Sources */,
 				25C160031F430CE400A9D24A /* AppDelegate.swift in Sources */,

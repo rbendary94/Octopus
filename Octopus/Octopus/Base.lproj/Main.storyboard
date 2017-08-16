@@ -212,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="559" y="103"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Client Register View Controller-->
         <scene sceneID="K8I-C8-mef">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="oSs-FV-Hs4" customClass="RegisterViewController" customModule="Octopus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="oSs-FV-Hs4" customClass="ClientRegisterViewController" customModule="Octopus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Hin-x1-RvZ"/>
                         <viewControllerLayoutGuide type="bottom" id="kxf-t9-PGN"/>
@@ -396,6 +396,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aem-ep-Y4V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2529.375" y="137.32394366197184"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F1L-es-B8p">
+            <objects>
+                <viewController id="63t-rv-Jje" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nfg-Uf-xPa"/>
+                        <viewControllerLayoutGuide type="bottom" id="1ge-SG-O6a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1WV-yZ-hoQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ga9-Tj-sRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3291" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YHJ-t1-Pla">
