@@ -19,9 +19,13 @@
 		25C160151F432A5E00A9D24A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		25C160171F432D0C00A9D24A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		25C160191F4338D800A9D24A /* ClientRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C160181F4338D800A9D24A /* ClientRegisterViewController.swift */; };
+
 		E3751FF01F44467500674BB4 /* Lawyer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3751FEF1F44467500674BB4 /* Lawyer.storyboard */; };
 		E3751FF21F445C8E00674BB4 /* LawyerTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3751FF11F445C8E00674BB4 /* LawyerTabBarViewController.swift */; };
 		E3751FF41F445F6B00674BB4 /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3751FF31F445F6B00674BB4 /* ESTabBarController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+
+		25C8BDC51F445D81002DE0BB /* LawyerRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C8BDC41F445D81002DE0BB /* LawyerRegisterViewController.swift */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,12 +40,16 @@
 		25C1600C1F430CE400A9D24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25C1600E1F430CE400A9D24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25C160181F4338D800A9D24A /* ClientRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientRegisterViewController.swift; sourceTree = "<group>"; };
+
 		9489BD886703C725B96A21D0 /* Pods-Octopus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Octopus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Octopus/Pods-Octopus.release.xcconfig"; sourceTree = "<group>"; };
 		A75B6463661BA11FBCDCD43A /* Pods_Octopus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Octopus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3751FEF1F44467500674BB4 /* Lawyer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lawyer.storyboard; sourceTree = "<group>"; };
 		E3751FF11F445C8E00674BB4 /* LawyerTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerTabBarViewController.swift; sourceTree = "<group>"; };
 		E3751FF31F445F6B00674BB4 /* ESTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESTabBarController.framework; path = "Pods/../build/Release-iphoneos/ESTabBarController/ESTabBarController.framework"; sourceTree = "<group>"; };
 		E5347FFFDA4D9CB69EE2C1AA /* Pods-Octopus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Octopus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Octopus/Pods-Octopus.debug.xcconfig"; sourceTree = "<group>"; };
+
+		25C8BDC41F445D81002DE0BB /* LawyerRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerRegisterViewController.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +96,13 @@
 				25AC16351F433E8500DEF29D /* PopUpViewController.swift */,
 				25AC16371F433EAD00DEF29D /* SignInViewController.swift */,
 				25AC16391F4343F800DEF29D /* APIManager.swift */,
+
 				E3751FEF1F44467500674BB4 /* Lawyer.storyboard */,
 				E3751FF11F445C8E00674BB4 /* LawyerTabBarViewController.swift */,
+				25C8BDC41F445D81002DE0BB /* LawyerRegisterViewController.swift */,
+
+				25C8BDC41F445D81002DE0BB /* LawyerRegisterViewController.swift */,
+
 			);
 			path = Octopus;
 			sourceTree = "<group>";
@@ -246,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25AC163A1F4343F800DEF29D /* APIManager.swift in Sources */,
+				25C8BDC51F445D81002DE0BB /* LawyerRegisterViewController.swift in Sources */,
 				25AC16381F433EAD00DEF29D /* SignInViewController.swift in Sources */,
 				25C160171F432D0C00A9D24A /* (null) in Sources */,
 				25AC16361F433E8500DEF29D /* PopUpViewController.swift in Sources */,
