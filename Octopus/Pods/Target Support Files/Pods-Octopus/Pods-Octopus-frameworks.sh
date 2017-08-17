@@ -104,12 +104,16 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ESTabBarController/ESTabBarController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FloatRatingView/FloatRatingView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/STRatingControl/STRatingControl.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ESTabBarController/ESTabBarController.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FloatRatingView/FloatRatingView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/STRatingControl/STRatingControl.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import STRatingControl
+class ViewController: UIViewController , STRatingControlDelegate {
 
-class ViewController: UIViewController {
-
+    @IBOutlet weak var ratingView: STRatingControl!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.ratingView.delegate = self
+        self.ratingView.rating = 3
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func didSelectRating(_ control: STRatingControl, rating: Int) {
+        print("Hi")
     }
 
 

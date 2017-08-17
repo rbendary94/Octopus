@@ -9,4 +9,6 @@ target 'Octopus' do
   pod 'ESTabBarController'
   pod 'ESTabBarController-swift'
   pod 'PageMenu'
+  pod 'STRatingControl'
+  pod 'FloatRatingView'
 end

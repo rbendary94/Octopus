@@ -1,18 +1,24 @@
 PODS:
   - ESTabBarController (0.1.3)
   - ESTabBarController-swift (2.5)
+  - FloatRatingView (2.0)
   - PageMenu (2.0.0)
+  - STRatingControl (1.1.0)
 
 DEPENDENCIES:
   - ESTabBarController
   - ESTabBarController-swift
+  - FloatRatingView
   - PageMenu
+  - STRatingControl
 
 SPEC CHECKSUMS:
   ESTabBarController: f08fa16b154cfb9d8d42096f7d6d10b58775dbf5
   ESTabBarController-swift: 8daa432f2a9be8ebd25101dc46c84472fd760512
+  FloatRatingView: 857ab8f10040d06a42fc979f486c8f9fecd2f2e5
   PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
+  STRatingControl: 92346816fb485c8a547c9687a19f94c81d7929ba
 
-PODFILE CHECKSUM: b2b0c1cd2689c68ed1b033ceb23263f39e835a57
+PODFILE CHECKSUM: b90b470502441e4e37f377cd6330e302ca710503
 
 COCOAPODS: 1.3.1
