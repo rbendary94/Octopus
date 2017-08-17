@@ -19,13 +19,14 @@
 		25C160151F432A5E00A9D24A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		25C160171F432D0C00A9D24A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		25C160191F4338D800A9D24A /* ClientRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C160181F4338D800A9D24A /* ClientRegisterViewController.swift */; };
-
+		25C8BDC51F445D81002DE0BB /* LawyerRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C8BDC41F445D81002DE0BB /* LawyerRegisterViewController.swift */; };
+		E33562041F448D8E0086B0CD /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E33562031F448D8E0086B0CD /* PageViewController.swift */; };
 		E3751FF01F44467500674BB4 /* Lawyer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3751FEF1F44467500674BB4 /* Lawyer.storyboard */; };
 		E3751FF21F445C8E00674BB4 /* LawyerTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3751FF11F445C8E00674BB4 /* LawyerTabBarViewController.swift */; };
 		E3751FF41F445F6B00674BB4 /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3751FF31F445F6B00674BB4 /* ESTabBarController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-
-		25C8BDC51F445D81002DE0BB /* LawyerRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C8BDC41F445D81002DE0BB /* LawyerRegisterViewController.swift */; };
-
+		E398C7341F45BA2F009EA43A /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E398C7331F45BA2F009EA43A /* BalanceTableViewCell.swift */; };
+		E398C7361F45BB2F009EA43A /* HeaderBalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E398C7351F45BB2F009EA43A /* HeaderBalanceTableViewCell.swift */; };
+		E398C7381F45BC68009EA43A /* BalanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E398C7371F45BC68009EA43A /* BalanceTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,16 +41,17 @@
 		25C1600C1F430CE400A9D24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25C1600E1F430CE400A9D24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25C160181F4338D800A9D24A /* ClientRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientRegisterViewController.swift; sourceTree = "<group>"; };
-
+		25C8BDC41F445D81002DE0BB /* LawyerRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerRegisterViewController.swift; sourceTree = "<group>"; };
 		9489BD886703C725B96A21D0 /* Pods-Octopus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Octopus.release.xcconfig"; path = "Pods/Target Support Files/Pods-Octopus/Pods-Octopus.release.xcconfig"; sourceTree = "<group>"; };
 		A75B6463661BA11FBCDCD43A /* Pods_Octopus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Octopus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E33562031F448D8E0086B0CD /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		E3751FEF1F44467500674BB4 /* Lawyer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lawyer.storyboard; sourceTree = "<group>"; };
 		E3751FF11F445C8E00674BB4 /* LawyerTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerTabBarViewController.swift; sourceTree = "<group>"; };
 		E3751FF31F445F6B00674BB4 /* ESTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESTabBarController.framework; path = "Pods/../build/Release-iphoneos/ESTabBarController/ESTabBarController.framework"; sourceTree = "<group>"; };
+		E398C7331F45BA2F009EA43A /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTableViewCell.swift; sourceTree = "<group>"; };
+		E398C7351F45BB2F009EA43A /* HeaderBalanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderBalanceTableViewCell.swift; sourceTree = "<group>"; };
+		E398C7371F45BC68009EA43A /* BalanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTableViewController.swift; sourceTree = "<group>"; };
 		E5347FFFDA4D9CB69EE2C1AA /* Pods-Octopus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Octopus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Octopus/Pods-Octopus.debug.xcconfig"; sourceTree = "<group>"; };
-
-		25C8BDC41F445D81002DE0BB /* LawyerRegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerRegisterViewController.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,13 +98,13 @@
 				25AC16351F433E8500DEF29D /* PopUpViewController.swift */,
 				25AC16371F433EAD00DEF29D /* SignInViewController.swift */,
 				25AC16391F4343F800DEF29D /* APIManager.swift */,
-
 				E3751FEF1F44467500674BB4 /* Lawyer.storyboard */,
 				E3751FF11F445C8E00674BB4 /* LawyerTabBarViewController.swift */,
 				25C8BDC41F445D81002DE0BB /* LawyerRegisterViewController.swift */,
-
-				25C8BDC41F445D81002DE0BB /* LawyerRegisterViewController.swift */,
-
+				E33562031F448D8E0086B0CD /* PageViewController.swift */,
+				E398C7331F45BA2F009EA43A /* BalanceTableViewCell.swift */,
+				E398C7351F45BB2F009EA43A /* HeaderBalanceTableViewCell.swift */,
+				E398C7371F45BC68009EA43A /* BalanceTableViewController.swift */,
 			);
 			path = Octopus;
 			sourceTree = "<group>";
@@ -161,6 +163,7 @@
 					25C15FFE1F430CE400A9D24A = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = ZUGQUHK8J8;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -240,11 +243,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Octopus/Pods-Octopus-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController/ESTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/PageMenu/PageMenu.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PageMenu.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -260,11 +265,15 @@
 			files = (
 				25AC163A1F4343F800DEF29D /* APIManager.swift in Sources */,
 				25C8BDC51F445D81002DE0BB /* LawyerRegisterViewController.swift in Sources */,
+				E398C7341F45BA2F009EA43A /* BalanceTableViewCell.swift in Sources */,
+				E33562041F448D8E0086B0CD /* PageViewController.swift in Sources */,
 				25AC16381F433EAD00DEF29D /* SignInViewController.swift in Sources */,
 				25C160171F432D0C00A9D24A /* (null) in Sources */,
 				25AC16361F433E8500DEF29D /* PopUpViewController.swift in Sources */,
+				E398C7361F45BB2F009EA43A /* HeaderBalanceTableViewCell.swift in Sources */,
 				25C160191F4338D800A9D24A /* ClientRegisterViewController.swift in Sources */,
 				25C160151F432A5E00A9D24A /* (null) in Sources */,
+				E398C7381F45BC68009EA43A /* BalanceTableViewController.swift in Sources */,
 				25C160051F430CE400A9D24A /* ViewController.swift in Sources */,
 				25C160031F430CE400A9D24A /* AppDelegate.swift in Sources */,
 				E3751FF21F445C8E00674BB4 /* LawyerTabBarViewController.swift in Sources */,

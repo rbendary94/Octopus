@@ -8,18 +8,20 @@
 
 
 import UIKit
-import  ESTabBarController
+import ESTabBarController
 
 class LawyerTabBarViewController: UIViewController {
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let tabBarController = ESTabBarController.init(tabIcons: [#imageLiteral(resourceName: "home-icon"),#imageLiteral(resourceName: "home-icon"),#imageLiteral(resourceName: "home-icon"),#imageLiteral(resourceName: "home-icon"),#imageLiteral(resourceName: "home-icon")])
  
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controllerOne = storyboard.instantiateViewController(withIdentifier: "SignInViewController")
-        let controllerTwo = storyboard.instantiateViewController(withIdentifier: "PopUpID")
+        let storyboard = UIStoryboard(name: "Lawyer", bundle: nil)
+        let controllerOne = storyboard.instantiateViewController(withIdentifier: "BalanceTableView")
+        let controllerTwo = storyboard.instantiateViewController(withIdentifier: "BalanceTableView")
 
         // Add child view controller.
         
@@ -33,13 +35,13 @@ class LawyerTabBarViewController: UIViewController {
         tabBarController?.setView(controllerOne, at: 0)
         tabBarController?.setView(controllerTwo, at: 1)
         tabBarController?.setView(controllerOne, at: 2)
-        tabBarController?.setView(controllerTwo, at: 3)
-        tabBarController?.setView(controllerOne, at: 4)
+//        tabBarController?.setView(controllerTwo, at: 3)
+//        tabBarController?.setView(controllerOne, at: 4)
         
-        tabBarController?.selectedColor = UIColor.red
-        tabBarController?.buttonsBackgroundColor = UIColor.lightGray
+        tabBarController?.selectedColor = UIColor.init(red: 239/255.0, green: 191/255.0, blue: 37/255.0, alpha: 1.0)
+        
+        tabBarController?.buttonsBackgroundColor =   UIColor.init(red: 57/255.0, green: 25/255.0, blue: 13/255.0, alpha: 1.0)
         tabBarController?.selectionIndicatorHeight = 2
-        
         
         
     }
@@ -48,8 +50,7 @@ class LawyerTabBarViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+  
     /*
     // MARK: - Navigation
 

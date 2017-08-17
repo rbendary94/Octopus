@@ -8,10 +8,10 @@
 
 import Foundation
 
-public class APIManager {
+open class APIManager {
     
 
-    func postData(contenturl:String,postCompleted : @escaping (_ jsonDict:NSDictionary) -> ()) {
+    func postData(_ contenturl:String,postCompleted : @escaping (_ jsonDict:NSDictionary) -> ()) {
         
         let url = URL(string: contenturl)
         var request = URLRequest(url: url!)

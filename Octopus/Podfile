@@ -8,4 +8,5 @@ target 'Octopus' do
   # Pods for Octopus
   pod 'ESTabBarController'
   pod 'ESTabBarController-swift'
+  pod 'PageMenu'
 end
