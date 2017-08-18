@@ -11,6 +11,7 @@ import UIKit
 class HeaderBalanceTableViewCell: UITableViewCell {
 
     @IBOutlet var currentAmountLabel: UILabel!
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

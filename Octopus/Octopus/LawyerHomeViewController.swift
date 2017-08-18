@@ -40,11 +40,6 @@ class LawyerHomeViewController: UIViewController, UITableViewDelegate , UITableV
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "LawyerCardCell") as! LawyerCardTableViewCell
 
-            let border = CALayer()
-            border.borderColor = UIColor.yellow.cgColor
-            border.borderWidth = 15
-            border.frame = CGRect(x: 0,y: 0,width: 5,height: cell.cardView.frame.height - 80)
-            cell.cardView.layer.addSublayer(border)
             return cell
             
             
@@ -64,7 +59,22 @@ class LawyerHomeViewController: UIViewController, UITableViewDelegate , UITableV
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if(indexPath.row == 1)
+        {
+            return 80.0
+        }
+     
         
-        return 240.0
+        return 280.0
+    }
+    
+    override func viewWillLayoutSubviews() {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "LawyerCardCell") as! LawyerCardTableViewCell
+//        
+//        let border = CALayer()
+//        border.borderColor = UIColor.yellow.cgColor
+//        border.borderWidth = 15
+//        border.frame = CGRect(x: 0,y: 0,width: 5,height: cell.cardView.bounds.height)
+//        cell.cardView.layer.addSublayer(border)
     }
 }

@@ -7,13 +7,14 @@
 //
 
 import UIKit
-import STRatingControl
+import FloatRatingView
 
 class LawyerHomeTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageBorderView: UIView!
     @IBOutlet weak var profileImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet var ratingControl: FloatRatingView!
 //    @IBOutlet weak var ratingControlView: STRatingControl!
     @IBOutlet weak var assignedCasesLabel: UILabel!
     @IBOutlet weak var assignedQuestionsLabel: UILabel!
@@ -26,6 +27,19 @@ class LawyerHomeTableViewCell: UITableViewCell {
         
         imageBorderView.layer.cornerRadius = 30
         profileImageView.layer.cornerRadius = 30
+        
+        // Required float rating view params
+//        self.ratingControl.emptyImage = UIImage(named: "StarEmpty")
+//        self.ratingControl.fullImage = UIImage(named: "StarFull")
+        // Optional params
+        //        self.floatRatingView.delegate = self
+        self.ratingControl.contentMode = UIViewContentMode.scaleAspectFit
+        self.ratingControl.maxRating = 5
+        self.ratingControl.minRating = 1
+        self.ratingControl.rating = 2.5
+        self.ratingControl.editable = true
+        self.ratingControl.halfRatings = true
+        self.ratingControl.floatRatings = false
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
