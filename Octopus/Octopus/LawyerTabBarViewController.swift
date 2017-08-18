@@ -20,7 +20,7 @@ class LawyerTabBarViewController: UIViewController {
  
         
         let storyboard = UIStoryboard(name: "Lawyer", bundle: nil)
-        let controllerOne = storyboard.instantiateViewController(withIdentifier: "BalanceTableView")
+        let controllerOne = storyboard.instantiateViewController(withIdentifier: "LawyerHomeView")
         let controllerTwo = storyboard.instantiateViewController(withIdentifier: "BalanceTableView")
 
         // Add child view controller.
