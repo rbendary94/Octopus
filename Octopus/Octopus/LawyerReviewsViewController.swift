@@ -11,12 +11,16 @@ import UIKit
 class LawyerReviewsViewController: UIViewController, UITableViewDelegate , UITableViewDataSource {
 
     
+    @IBOutlet weak var tableView: UITableView!
     let reviews = ["Review 1", "Review 2" , "Review 3"]
     @IBOutlet weak var addFloatingButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         addFloatingButton.layer.cornerRadius = 0.5 * addFloatingButton.bounds.size.width
         self.view.addSubview(addFloatingButton)
+//        self.tableView.sizeToFit()
+//        self.tableView.ContentInset = UIEdgeInsets(0, 0, 0, 0);
+//        self.tableView.contentInset.bottom = 0
         // Do any additional setup after loading the view.
     }
 

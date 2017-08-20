@@ -19,7 +19,8 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
     @IBOutlet weak var ratingController: FloatRatingView!
     @IBOutlet weak var totalCasesSolvedLabel: UILabel!
     @IBOutlet weak var totalQuestionsAnsweredLabel: UILabel!
-    
+    let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+   
     var pageMenu : CAPSPageMenu!
     
     override func viewDidLoad() {
@@ -28,7 +29,12 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
         self.backgroundImageView.layer.cornerRadius = 0.5 * backgroundImageView.bounds.size.width
         self.profilePicImg.setRounded()
 
-        
+        button.backgroundColor = .green
+        button.setTitle("Test Button", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        button.isHidden = true
+        self.view.addSubview(button)
+
         // Initialize view controllers to display and place in array
         var controllerArray : [UIViewController] = []
         
@@ -69,6 +75,9 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
         pageMenu!.delegate = self
         
         self.view.addSubview(pageMenu!.view)
+        
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -77,6 +86,30 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func willMoveToPage(_ controller: UIViewController, index: Int) {
+        if(index == 1){
+            print("review")
+            self.button.isHidden = false
+            
+        }
+        else{
+            self.button.isHidden = true
+            
+            // hide button
+        }
+
+    }
+    
+
+    func buttonAction(sender: UIButton!) {
+        print("Button tapped")
+        
+        let popOverVC = UIStoryboard(name: "Lawyer", bundle: nil).instantiateViewController(withIdentifier: "AddButtonsPopUp") as! AddButtonsPopUpViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
 
     /*
     // MARK: - Navigation

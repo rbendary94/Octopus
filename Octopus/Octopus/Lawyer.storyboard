@@ -519,14 +519,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hug-So-QUj">
-                                <rect key="frame" x="16" y="20" width="288" height="548"/>
+                                <rect key="frame" x="16" y="20" width="288" height="300"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Gyz-Ke-k9v"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LawyerReviewCell" rowHeight="200" id="U7h-fD-rIw" customClass="LawyerReviewTableViewCell" customModule="Octopus" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="288" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U7h-fD-rIw" id="oKz-GW-0rB">
-                                            <rect key="frame" x="0.0" y="0.0" width="288" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="288" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bv-5P-Dgs" customClass="FloatRatingView" customModule="FloatRatingView">
@@ -589,8 +592,8 @@
                                     <outlet property="delegate" destination="dfK-FO-0Jh" id="6PX-Es-0hT"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhU-Qc-jI3">
-                                <rect key="frame" x="246" y="36" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhU-Qc-jI3">
+                                <rect key="frame" x="231" y="406" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.094117647058823528" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="IJ6-lG-War"/>
@@ -608,15 +611,15 @@
                         <color key="backgroundColor" red="0.94117647058823528" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="nhU-Qc-jI3" secondAttribute="trailing" constant="8" id="2Xe-tU-pIV"/>
-                            <constraint firstItem="nhU-Qc-jI3" firstAttribute="top" secondItem="Cvp-i4-UnA" secondAttribute="bottom" constant="16" id="cuZ-r6-pZ0"/>
+                            <constraint firstItem="qqI-BD-iRh" firstAttribute="top" secondItem="nhU-Qc-jI3" secondAttribute="bottom" constant="16" id="ZDq-LS-cYi"/>
                             <constraint firstItem="hug-So-QUj" firstAttribute="top" secondItem="Cvp-i4-UnA" secondAttribute="bottom" id="hSW-EW-7Dp"/>
-                            <constraint firstItem="qqI-BD-iRh" firstAttribute="top" secondItem="hug-So-QUj" secondAttribute="bottom" id="q98-cz-Q3i"/>
                             <constraint firstItem="hug-So-QUj" firstAttribute="leading" secondItem="8IE-0R-6e6" secondAttribute="leadingMargin" id="tX4-Es-ADt"/>
                             <constraint firstItem="hug-So-QUj" firstAttribute="trailing" secondItem="8IE-0R-6e6" secondAttribute="trailingMargin" id="ukc-vh-tEB"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addFloatingButton" destination="nhU-Qc-jI3" id="gns-j6-zsg"/>
+                        <outlet property="tableView" destination="hug-So-QUj" id="E6S-Ht-5BC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ap-hR-UJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
