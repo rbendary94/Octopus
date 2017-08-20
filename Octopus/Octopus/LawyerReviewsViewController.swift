@@ -12,9 +12,10 @@ class LawyerReviewsViewController: UIViewController, UITableViewDelegate , UITab
 
     
     let reviews = ["Review 1", "Review 2" , "Review 3"]
+    @IBOutlet weak var addFloatingButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        addFloatingButton.layer.cornerRadius = 0.5 * addFloatingButton.bounds.size.width
         // Do any additional setup after loading the view.
     }
 
@@ -26,7 +27,7 @@ class LawyerReviewsViewController: UIViewController, UITableViewDelegate , UITab
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell =  tableView.dequeueReusableCell(withIdentifier: "LawyerReviewCell") as! LawyerReviewTableViewCell
-        cell.reviewLabel.text = reviews[indexPath.row]
+//        cell.reviewLabel.text = reviews[indexPath.row]
         cell.authorLabel.text = "Posted by Anonymous"
         
         return cell
@@ -37,8 +38,9 @@ class LawyerReviewsViewController: UIViewController, UITableViewDelegate , UITab
     }
    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-      
-        return 200
+
+        let screenHeight: CGFloat = UIScreen.main.bounds.height
+        return screenHeight / 4.0
     }
 
 }
