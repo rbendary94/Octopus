@@ -175,26 +175,7 @@
                                                         <constraint firstItem="evF-cS-dA6" firstAttribute="top" secondItem="LkG-yq-VBB" secondAttribute="bottom" constant="25" id="zO4-TH-6aj"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="uIG-Zj-8E2" customClass="FloatRatingView" customModule="FloatRatingView">
-                                                    <rect key="frame" x="110" y="136" width="100" height="16.5"/>
-                                                    <color key="backgroundColor" red="0.94117647058823528" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="EaG-iK-E9Y"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="StarEmpty"/>
-                                                        <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="StarFull"/>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="minRating">
-                                                            <integer key="value" value="0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
-                                                            <integer key="value" value="5"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
-                                                            <real key="value" value="3"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </view>
+                                              
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="x9k-Xq-HkR" firstAttribute="centerX" secondItem="riq-NW-uYz" secondAttribute="centerX" id="5ZL-VI-eYY"/>
