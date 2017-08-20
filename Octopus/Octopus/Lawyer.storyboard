@@ -57,7 +57,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9k-Xq-HkR">
-                                                    <rect key="frame" x="105" y="8" width="104" height="100"/>
+                                                    <rect key="frame" x="105" y="16" width="104" height="100"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kit_Harington_SDCC_2013_(cropped)" translatesAutoresizingMaskIntoConstraints="NO" id="ghJ-d7-c4Y">
                                                             <rect key="frame" x="2" y="2" width="100" height="96"/>
@@ -76,7 +76,7 @@
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riq-NW-uYz">
-                                                    <rect key="frame" x="115" y="116" width="83" height="16"/>
+                                                    <rect key="frame" x="115" y="124" width="83" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="1un-DL-8HJ"/>
                                                     </constraints>
@@ -148,7 +148,7 @@
                                                     </constraints>
                                                 </view>
                                                 <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="uIG-Zj-8E2" customClass="FloatRatingView" customModule="FloatRatingView">
-                                                    <rect key="frame" x="110" y="140" width="100" height="12.5"/>
+                                                    <rect key="frame" x="110" y="148" width="100" height="4.5"/>
                                                     <color key="backgroundColor" red="0.94117647058823528" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="EaG-iK-E9Y"/>
@@ -177,7 +177,7 @@
                                                 <constraint firstItem="riq-NW-uYz" firstAttribute="centerX" secondItem="puz-AJ-JnD" secondAttribute="centerX" id="f4h-Mx-71N"/>
                                                 <constraint firstItem="puz-AJ-JnD" firstAttribute="top" secondItem="uIG-Zj-8E2" secondAttribute="bottom" constant="2" id="h10-iz-IfA"/>
                                                 <constraint firstItem="uIG-Zj-8E2" firstAttribute="centerX" secondItem="hOV-1d-JYd" secondAttribute="centerX" id="n3i-LP-brp"/>
-                                                <constraint firstItem="x9k-Xq-HkR" firstAttribute="top" secondItem="hOV-1d-JYd" secondAttribute="top" constant="8" id="nxS-vw-XkP"/>
+                                                <constraint firstItem="x9k-Xq-HkR" firstAttribute="top" secondItem="hOV-1d-JYd" secondAttribute="top" constant="16" id="nxS-vw-XkP"/>
                                                 <constraint firstItem="puz-AJ-JnD" firstAttribute="leading" secondItem="hOV-1d-JYd" secondAttribute="leading" constant="24" id="wF5-jE-xRS"/>
                                             </constraints>
                                         </tableViewCellContentView>
