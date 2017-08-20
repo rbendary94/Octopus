@@ -37,19 +37,27 @@ class LawyerHomeViewController: UIViewController, UITableViewDelegate , UITableV
             return cell
 
         }
-        else {
+        else if(indexPath.row == 2) {
             let cell = tableView.dequeueReusableCell(withIdentifier: "LawyerCardCell") as! LawyerCardTableViewCell
+            cell.setNeedsLayout()
 
             return cell
             
             
+        }else {
+        
+            let cell = tableView.dequeueReusableCell(withIdentifier: "LawyerQuestionCell") as! LawyerQuestionTableViewCell
+                cell.setNeedsLayout()
+            return cell
+        
+        
         }
         
         
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 7
     }
     
   
@@ -68,7 +76,7 @@ class LawyerHomeViewController: UIViewController, UITableViewDelegate , UITableV
         return 280.0
     }
     
-    override func viewWillLayoutSubviews() {
+//    override func viewWillLayoutSubviews() {
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "LawyerCardCell") as! LawyerCardTableViewCell
 //        
 //        let border = CALayer()
@@ -76,5 +84,5 @@ class LawyerHomeViewController: UIViewController, UITableViewDelegate , UITableV
 //        border.borderWidth = 15
 //        border.frame = CGRect(x: 0,y: 0,width: 5,height: cell.cardView.bounds.height)
 //        cell.cardView.layer.addSublayer(border)
-    }
+//    }
 }

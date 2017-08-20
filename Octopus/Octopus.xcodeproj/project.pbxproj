@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16A725AEDF644CEF1B8237B5 /* Pods_Octopus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A75B6463661BA11FBCDCD43A /* Pods_Octopus.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		25464B921F49818600A9491B /* LawyerQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25464B911F49818600A9491B /* LawyerQuestionTableViewCell.swift */; };
 		25AC16361F433E8500DEF29D /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC16351F433E8500DEF29D /* PopUpViewController.swift */; };
 		25AC16381F433EAD00DEF29D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC16371F433EAD00DEF29D /* SignInViewController.swift */; };
 		25AC163A1F4343F800DEF29D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC16391F4343F800DEF29D /* APIManager.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		25464B911F49818600A9491B /* LawyerQuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerQuestionTableViewCell.swift; sourceTree = "<group>"; };
 		25AC16351F433E8500DEF29D /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		25AC16371F433EAD00DEF29D /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		25AC16391F4343F800DEF29D /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				25C296C51F45D3DC00009E38 /* LawyerHomeTableViewCell.swift */,
 				25C296C71F45E29200009E38 /* LawyerCardTableViewCell.swift */,
 				25C296C91F45E3D300009E38 /* LawyerTotalCasesTableViewCell.swift */,
+				25464B911F49818600A9491B /* LawyerQuestionTableViewCell.swift */,
 			);
 			path = Octopus;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				25C160031F430CE400A9D24A /* AppDelegate.swift in Sources */,
 				25C296CA1F45E3D300009E38 /* LawyerTotalCasesTableViewCell.swift in Sources */,
 				25C296C81F45E29200009E38 /* LawyerCardTableViewCell.swift in Sources */,
+				25464B921F49818600A9491B /* LawyerQuestionTableViewCell.swift in Sources */,
 				25C296C41F45D1B400009E38 /* LawyerHomeViewController.swift in Sources */,
 				E3751FF21F445C8E00674BB4 /* LawyerTabBarViewController.swift in Sources */,
 			);

@@ -25,18 +25,16 @@ class LawyerCardTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-//    override func layoutSubviews() {
-////        super.layoutSubviews()
-////        let border = CALayer()
-////        border.borderColor = UIColor.yellow.cgColor
-////        border.borderWidth = 15
-////        border.frame = CGRect(x: 0,y: 0,width: 5,height: cardView.frame.height - 60)
-////        cardView.layer.addSublayer(border)
-////        
-////        print("########",self.frame.height)
-////        print("Test",testView.frame.height)
-//        
-//    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let border = CALayer()
+        border.borderColor = UIColor.init(red: 239/255, green: 191/255, blue: 37/255, alpha: 1).cgColor
+        border.borderWidth = 20
+        border.frame = CGRect(x: 0,y: 0,width: 5,height: cardView.frame.height)
+        cardView.layer.addSublayer(border)
+        cardView.layer.masksToBounds = true
+   
+    }
 
 
 }
