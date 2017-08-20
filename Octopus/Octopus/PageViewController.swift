@@ -27,22 +27,17 @@ class PageViewController: UIViewController,CAPSPageMenuDelegate {
         // Initialize view controllers to display and place in array
         var controllerArray : [UIViewController] = []
         
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controllerOne = storyboard.instantiateViewController(withIdentifier: "SignInViewController")
-        controllerOne.title = "Test 1"
+        let laywerStoryboard = UIStoryboard(name: "Lawyer", bundle: nil)
+        let controllerOne = laywerStoryboard.instantiateViewController(withIdentifier: "LaywerAboutView")
+        controllerOne.title = "About"
         controllerArray.append(controllerOne)
         
-        
-        let controllertwo = storyboard.instantiateViewController(withIdentifier: "SignInViewController")
-        controllertwo.title = "Test 2"
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let controllertwo = mainStoryboard.instantiateViewController(withIdentifier: "SignInViewController")
+        controllertwo.title = "Reviews"
         controllerArray.append(controllertwo)
         
-        
-        
-        let controllerth = storyboard.instantiateViewController(withIdentifier: "SignInViewController")
-        controllerth.title = "Test 3"
-        controllerArray.append(controllerth)
-        
+
         // Customize menu (Optional)
         let parameters: [CAPSPageMenuOption] = [
             .menuItemSeparatorWidth(4.3),
