@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oG0-bA-WTZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MJJ-md-AHI">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -509,7 +509,7 @@
         <!--Lawyer Reviews View Controller-->
         <scene sceneID="Bng-Tl-buS">
             <objects>
-                <viewController id="dfK-FO-0Jh" customClass="LawyerReviewsViewController" customModule="Octopus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LawyerReviews" id="dfK-FO-0Jh" customClass="LawyerReviewsViewController" customModule="Octopus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cvp-i4-UnA"/>
                         <viewControllerLayoutGuide type="bottom" id="qqI-BD-iRh"/>
@@ -590,7 +590,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhU-Qc-jI3">
-                                <rect key="frame" x="246" y="510" width="50" height="50"/>
+                                <rect key="frame" x="246" y="36" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.094117647058823528" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="IJ6-lG-War"/>
@@ -600,12 +600,15 @@
                                 <state key="normal" image="StarEmpty">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="showPopUp:" destination="dfK-FO-0Jh" eventType="touchUpInside" id="jzH-p2-1QT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647058823528" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="nhU-Qc-jI3" secondAttribute="trailing" constant="8" id="2Xe-tU-pIV"/>
-                            <constraint firstItem="qqI-BD-iRh" firstAttribute="top" secondItem="nhU-Qc-jI3" secondAttribute="bottom" constant="8" id="Cel-ab-VGL"/>
+                            <constraint firstItem="nhU-Qc-jI3" firstAttribute="top" secondItem="Cvp-i4-UnA" secondAttribute="bottom" constant="16" id="cuZ-r6-pZ0"/>
                             <constraint firstItem="hug-So-QUj" firstAttribute="top" secondItem="Cvp-i4-UnA" secondAttribute="bottom" id="hSW-EW-7Dp"/>
                             <constraint firstItem="qqI-BD-iRh" firstAttribute="top" secondItem="hug-So-QUj" secondAttribute="bottom" id="q98-cz-Q3i"/>
                             <constraint firstItem="hug-So-QUj" firstAttribute="leading" secondItem="8IE-0R-6e6" secondAttribute="leadingMargin" id="tX4-Es-ADt"/>
@@ -618,7 +621,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Ap-hR-UJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1306.875" y="-875.70422535211264"/>
+            <point key="canvasLocation" x="1125" y="-889"/>
         </scene>
         <!--Lawyer Profile View Controller-->
         <scene sceneID="blr-ZM-XDJ">
@@ -741,6 +744,7 @@
                         <outlet property="backgroundImageView" destination="kj2-Fw-3ye" id="O0F-cP-c5g"/>
                         <outlet property="fullName" destination="v9D-Oa-eia" id="eEX-1U-ItW"/>
                         <outlet property="profilePicImg" destination="7zw-J3-hyN" id="TSe-fh-R0f"/>
+                        <outlet property="profileView" destination="TFe-va-FFX" id="lzY-6k-PFg"/>
                         <outlet property="ratingController" destination="A5p-PF-blG" id="dfN-dF-kIU"/>
                         <outlet property="totalCasesSolvedLabel" destination="2w5-Yr-9U8" id="Hod-7W-Bgf"/>
                         <outlet property="totalQuestionsAnsweredLabel" destination="TG0-BZ-m4U" id="D1e-aF-Vo8"/>
@@ -951,34 +955,78 @@
             </objects>
             <point key="canvasLocation" x="-423" y="-889"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="YMc-b5-TvI">
+        <!--Add Buttons Pop Up View Controller-->
+        <scene sceneID="YZD-hU-AEf">
             <objects>
-                <viewController id="F5d-j1-6eV" customClass="PageViewController" customModule="Octopus" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="AddButtonsPopUp" storyboardIdentifier="AddButtonsPopUp" id="e7X-q5-Ogg" customClass="AddButtonsPopUpViewController" customModule="Octopus" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lp0-Rl-cCs"/>
-                        <viewControllerLayoutGuide type="bottom" id="qaB-Yy-ff8"/>
+                        <viewControllerLayoutGuide type="top" id="n30-AS-enV"/>
+                        <viewControllerLayoutGuide type="bottom" id="wuY-tA-D94"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="50G-gw-bsy">
+                    <view key="view" contentMode="scaleToFill" id="Kt0-Z6-1yj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" barStyle="black" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="t4D-qN-AF1">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="0.22352941179999999" green="0.098039215690000001" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqz-yN-TMI">
+                                <rect key="frame" x="254" y="256" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.74901960779999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="chatIcon-2x"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrl-hA-x3W">
+                                <rect key="frame" x="254" y="454" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.22352941179999999" green="0.098039215690000001" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wXI-QC-ucQ"/>
+                                    <constraint firstAttribute="width" constant="50" id="wf2-oa-CXn"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="chatIcon-2x"/>
+                                <connections>
+                                    <action selector="closePopUp:" destination="e7X-q5-Ogg" eventType="touchUpInside" id="nP9-Pr-aOS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCI-wQ-ebR">
+                                <rect key="frame" x="254" y="322" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.74901960779999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="scale"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMq-nA-5R2">
+                                <rect key="frame" x="254" y="388" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.74901960779999999" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="profile-card"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.22352941179999999" green="0.098039215690000001" blue="0.050980392159999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MMq-nA-5R2" firstAttribute="height" secondItem="zqz-yN-TMI" secondAttribute="height" id="12q-cC-kfD"/>
+                            <constraint firstItem="MMq-nA-5R2" firstAttribute="trailing" secondItem="zqz-yN-TMI" secondAttribute="trailing" id="152-Qv-gcx"/>
+                            <constraint firstItem="yCI-wQ-ebR" firstAttribute="top" secondItem="zqz-yN-TMI" secondAttribute="bottom" constant="16" id="63F-pC-aXE"/>
+                            <constraint firstItem="yCI-wQ-ebR" firstAttribute="width" secondItem="zqz-yN-TMI" secondAttribute="width" id="78s-fb-2zq"/>
+                            <constraint firstItem="wrl-hA-x3W" firstAttribute="trailing" secondItem="zqz-yN-TMI" secondAttribute="trailing" id="7Fj-pn-Fl4"/>
+                            <constraint firstItem="MMq-nA-5R2" firstAttribute="top" secondItem="yCI-wQ-ebR" secondAttribute="bottom" constant="16" id="EWo-kF-hqa"/>
+                            <constraint firstAttribute="trailing" secondItem="wrl-hA-x3W" secondAttribute="trailing" constant="16" id="GWY-CY-bBb"/>
+                            <constraint firstItem="yCI-wQ-ebR" firstAttribute="height" secondItem="zqz-yN-TMI" secondAttribute="height" id="O8S-Mp-hYr"/>
+                            <constraint firstItem="yCI-wQ-ebR" firstAttribute="trailing" secondItem="zqz-yN-TMI" secondAttribute="trailing" id="OKb-2D-zBf"/>
+                            <constraint firstItem="wrl-hA-x3W" firstAttribute="height" secondItem="zqz-yN-TMI" secondAttribute="height" id="RCi-us-0FM"/>
+                            <constraint firstItem="wuY-tA-D94" firstAttribute="top" secondItem="wrl-hA-x3W" secondAttribute="bottom" constant="64" id="b3b-3s-RtA"/>
+                            <constraint firstItem="wrl-hA-x3W" firstAttribute="top" secondItem="MMq-nA-5R2" secondAttribute="bottom" constant="16" id="lbO-aC-4TG"/>
+                            <constraint firstItem="MMq-nA-5R2" firstAttribute="width" secondItem="zqz-yN-TMI" secondAttribute="width" id="rxk-V3-io0"/>
+                            <constraint firstItem="wrl-hA-x3W" firstAttribute="width" secondItem="zqz-yN-TMI" secondAttribute="width" id="uxi-JP-qTy"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="searchBar" destination="t4D-qN-AF1" id="AUE-tT-UZj"/>
+                        <outlet property="askQuestionBtn" destination="zqz-yN-TMI" id="8sl-IB-VBo"/>
+                        <outlet property="closeBtn" destination="wrl-hA-x3W" id="17z-dJ-Dtv"/>
+                        <outlet property="postCaseBtn" destination="yCI-wQ-ebR" id="GcT-UT-GbX"/>
+                        <outlet property="writeReviewBtn" destination="MMq-nA-5R2" id="3Dk-o5-ALt"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aem-pa-P89" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KbV-Mv-QD4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1305" y="-889"/>
+            <point key="canvasLocation" x="-1356" y="-132"/>
         </scene>
     </scenes>
     <resources>
@@ -987,5 +1035,7 @@
         <image name="StarFull" width="22" height="22"/>
         <image name="chatIcon-2x" width="25" height="25"/>
         <image name="filledStar" width="21" height="20"/>
+        <image name="profile-card" width="25" height="25"/>
+        <image name="scale" width="25" height="25"/>
     </resources>
 </document>

@@ -28,12 +28,11 @@ class PageViewController: UIViewController,CAPSPageMenuDelegate {
         var controllerArray : [UIViewController] = []
         
         let laywerStoryboard = UIStoryboard(name: "Lawyer", bundle: nil)
-        let controllerOne = laywerStoryboard.instantiateViewController(withIdentifier: "LaywerAboutView")
+        let controllerOne = laywerStoryboard.instantiateViewController(withIdentifier: "LawyerReviews")
         controllerOne.title = "About"
         controllerArray.append(controllerOne)
         
-        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let controllertwo = mainStoryboard.instantiateViewController(withIdentifier: "SignInViewController")
+        let controllertwo = laywerStoryboard.instantiateViewController(withIdentifier: "LawyerReviews")
         controllertwo.title = "Reviews"
         controllerArray.append(controllertwo)
         

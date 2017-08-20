@@ -16,6 +16,7 @@ class LawyerReviewsViewController: UIViewController, UITableViewDelegate , UITab
     override func viewDidLoad() {
         super.viewDidLoad()
         addFloatingButton.layer.cornerRadius = 0.5 * addFloatingButton.bounds.size.width
+        self.view.addSubview(addFloatingButton)
         // Do any additional setup after loading the view.
     }
 
@@ -43,4 +44,12 @@ class LawyerReviewsViewController: UIViewController, UITableViewDelegate , UITab
         return screenHeight / 4.0
     }
 
+    @IBAction func showPopUp(_ sender: Any) {
+        
+        let popOverVC = UIStoryboard(name: "Lawyer", bundle: nil).instantiateViewController(withIdentifier: "AddButtonsPopUp") as! AddButtonsPopUpViewController
+        self.addChildViewController(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParentViewController: self)
+    }
 }
