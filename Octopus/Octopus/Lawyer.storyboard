@@ -152,7 +152,7 @@
                                                         <constraint firstAttribute="width" constant="100" id="WpH-SM-2HR"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
-=======
+
                                                 <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="uIG-Zj-8E2" customClass="FloatRatingView" customModule="FloatRatingView">
                                                     <rect key="frame" x="110" y="110" width="100" height="42.5"/>
                                                     <color key="backgroundColor" red="0.94117647058823528" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
@@ -993,9 +993,6 @@
         <image name="StarFull" width="22" height="22"/>
         <image name="chatIcon-2x" width="25" height="25"/>
         <image name="filledStar" width="21" height="20"/>
-<<<<<<< HEAD
         <image name="home-grey-1" width="48" height="46"/>
-=======
->>>>>>> origin/master
     </resources>
 </document>
