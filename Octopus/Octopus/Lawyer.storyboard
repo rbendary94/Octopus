@@ -57,25 +57,25 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9k-Xq-HkR">
-                                                    <rect key="frame" x="125" y="14" width="64" height="64"/>
+                                                    <rect key="frame" x="99" y="8" width="116" height="96"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kit_Harington_SDCC_2013_(cropped)" translatesAutoresizingMaskIntoConstraints="NO" id="ghJ-d7-c4Y">
-                                                            <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                                            <rect key="frame" x="8" y="24" width="100" height="64"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="48" id="JM4-eF-63O"/>
-                                                                <constraint firstAttribute="width" constant="48" id="e0B-h4-cDN"/>
+                                                                <constraint firstAttribute="height" constant="64" id="JM4-eF-63O"/>
+                                                                <constraint firstAttribute="width" constant="100" id="e0B-h4-cDN"/>
                                                             </constraints>
                                                         </imageView>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="ghJ-d7-c4Y" firstAttribute="bottom" secondItem="x9k-Xq-HkR" secondAttribute="bottomMargin" id="59p-AW-G7c"/>
                                                         <constraint firstItem="ghJ-d7-c4Y" firstAttribute="leading" secondItem="x9k-Xq-HkR" secondAttribute="leadingMargin" id="D4r-SK-PaM"/>
-                                                        <constraint firstItem="ghJ-d7-c4Y" firstAttribute="top" secondItem="x9k-Xq-HkR" secondAttribute="topMargin" id="ZYN-Y0-rNU"/>
+                                                        <constraint firstItem="ghJ-d7-c4Y" firstAttribute="top" secondItem="x9k-Xq-HkR" secondAttribute="topMargin" constant="16" id="ZYN-Y0-rNU"/>
                                                         <constraint firstItem="ghJ-d7-c4Y" firstAttribute="trailing" secondItem="x9k-Xq-HkR" secondAttribute="trailingMargin" id="iIn-zu-69i"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riq-NW-uYz">
-                                                    <rect key="frame" x="115" y="86" width="83" height="16"/>
+                                                    <rect key="frame" x="115" y="112" width="83" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="1un-DL-8HJ"/>
                                                     </constraints>
@@ -146,14 +146,8 @@
                                                         <constraint firstItem="i8n-4Y-H0i" firstAttribute="top" secondItem="4W0-MD-HU7" secondAttribute="bottom" constant="8" id="ygF-nf-uXr"/>
                                                     </constraints>
                                                 </view>
-                                                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Uh8-8Z-4tL" customClass="FloatRatingView" customModule="FloatRatingView">
-                                                    <rect key="frame" x="110" y="115" width="100" height="24.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="100" id="WpH-SM-2HR"/>
-                                                    </constraints>
-
                                                 <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="uIG-Zj-8E2" customClass="FloatRatingView" customModule="FloatRatingView">
-                                                    <rect key="frame" x="110" y="110" width="100" height="42.5"/>
+                                                    <rect key="frame" x="110" y="136" width="100" height="16.5"/>
                                                     <color key="backgroundColor" red="0.94117647058823528" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="EaG-iK-E9Y"/>
@@ -174,15 +168,15 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="riq-NW-uYz" firstAttribute="top" secondItem="hOV-1d-JYd" secondAttribute="top" constant="86" id="4kB-jf-sH5"/>
                                                 <constraint firstItem="x9k-Xq-HkR" firstAttribute="centerX" secondItem="riq-NW-uYz" secondAttribute="centerX" id="5ZL-VI-eYY"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="puz-AJ-JnD" secondAttribute="bottom" id="EDS-lR-ISx"/>
-                                                <constraint firstItem="puz-AJ-JnD" firstAttribute="top" secondItem="uIG-Zj-8E2" secondAttribute="bottom" constant="2" id="FmQ-y4-1ho"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="puz-AJ-JnD" secondAttribute="trailing" constant="16" id="Ggm-F0-z7O"/>
                                                 <constraint firstItem="uIG-Zj-8E2" firstAttribute="top" secondItem="riq-NW-uYz" secondAttribute="bottom" constant="8" id="KSl-UM-sZa"/>
                                                 <constraint firstItem="riq-NW-uYz" firstAttribute="top" secondItem="x9k-Xq-HkR" secondAttribute="bottom" constant="8" symbolic="YES" id="Vto-Cs-bPg"/>
                                                 <constraint firstItem="riq-NW-uYz" firstAttribute="centerX" secondItem="puz-AJ-JnD" secondAttribute="centerX" id="f4h-Mx-71N"/>
+                                                <constraint firstItem="puz-AJ-JnD" firstAttribute="top" secondItem="uIG-Zj-8E2" secondAttribute="bottom" constant="2" id="h10-iz-IfA"/>
                                                 <constraint firstItem="uIG-Zj-8E2" firstAttribute="centerX" secondItem="hOV-1d-JYd" secondAttribute="centerX" id="n3i-LP-brp"/>
+                                                <constraint firstItem="x9k-Xq-HkR" firstAttribute="top" secondItem="hOV-1d-JYd" secondAttribute="top" constant="8" id="nxS-vw-XkP"/>
                                                 <constraint firstItem="puz-AJ-JnD" firstAttribute="leading" secondItem="hOV-1d-JYd" secondAttribute="leading" constant="16" id="wF5-jE-xRS"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -992,6 +986,5 @@
         <image name="StarFull" width="22" height="22"/>
         <image name="chatIcon-2x" width="25" height="25"/>
         <image name="filledStar" width="21" height="20"/>
-        <image name="home-grey-1" width="48" height="46"/>
     </resources>
 </document>
