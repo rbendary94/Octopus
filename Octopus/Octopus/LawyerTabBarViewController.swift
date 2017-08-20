@@ -16,7 +16,7 @@ class LawyerTabBarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let tabBarController = ESTabBarController.init(tabIcons: [#imageLiteral(resourceName: "home-icon"),#imageLiteral(resourceName: "home-icon"),#imageLiteral(resourceName: "home-icon"),#imageLiteral(resourceName: "home-icon"),#imageLiteral(resourceName: "home-icon")])
+        let tabBarController = ESTabBarController.init(tabIcons: [#imageLiteral(resourceName: "home-icon"),#imageLiteral(resourceName: "scale"),#imageLiteral(resourceName: "chat-icon"),#imageLiteral(resourceName: "payment"),#imageLiteral(resourceName: "profile-card")])
  
         
         let storyboard = UIStoryboard(name: "Lawyer", bundle: nil)
