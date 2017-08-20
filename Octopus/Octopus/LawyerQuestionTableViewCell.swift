@@ -13,12 +13,11 @@ class LawyerQuestionTableViewCell: UITableViewCell {
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var questionTitleLabel: UILabel!
     @IBOutlet weak var answerTextField: UITextField!
-    @IBOutlet weak var questioChatButton: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var categoryLabel: UILabel!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var recordAnswerButton: UIButton!
-    
+    @IBOutlet weak var questioChatButton: UIButton!
     @IBOutlet weak var viewAllQuestionsButton: UIButton!
     
     

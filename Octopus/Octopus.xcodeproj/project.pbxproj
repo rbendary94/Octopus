@@ -11,6 +11,7 @@
 		25464B921F49818600A9491B /* LawyerQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25464B911F49818600A9491B /* LawyerQuestionTableViewCell.swift */; };
 		25464B941F4991AE00A9491B /* LawyerReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25464B931F4991AE00A9491B /* LawyerReviewsViewController.swift */; };
 		25464B961F4993FD00A9491B /* LawyerReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25464B951F4993FD00A9491B /* LawyerReviewTableViewCell.swift */; };
+		25464B981F49BBE100A9491B /* LawyerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25464B971F49BBE100A9491B /* LawyerProfileViewController.swift */; };
 		25AC16361F433E8500DEF29D /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC16351F433E8500DEF29D /* PopUpViewController.swift */; };
 		25AC16381F433EAD00DEF29D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC16371F433EAD00DEF29D /* SignInViewController.swift */; };
 		25AC163A1F4343F800DEF29D /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AC16391F4343F800DEF29D /* APIManager.swift */; };
@@ -40,6 +41,7 @@
 		25464B911F49818600A9491B /* LawyerQuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerQuestionTableViewCell.swift; sourceTree = "<group>"; };
 		25464B931F4991AE00A9491B /* LawyerReviewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerReviewsViewController.swift; sourceTree = "<group>"; };
 		25464B951F4993FD00A9491B /* LawyerReviewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerReviewTableViewCell.swift; sourceTree = "<group>"; };
+		25464B971F49BBE100A9491B /* LawyerProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerProfileViewController.swift; sourceTree = "<group>"; };
 		25AC16351F433E8500DEF29D /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		25AC16371F433EAD00DEF29D /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		25AC16391F4343F800DEF29D /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				25464B911F49818600A9491B /* LawyerQuestionTableViewCell.swift */,
 				25464B931F4991AE00A9491B /* LawyerReviewsViewController.swift */,
 				25464B951F4993FD00A9491B /* LawyerReviewTableViewCell.swift */,
+				25464B971F49BBE100A9491B /* LawyerProfileViewController.swift */,
 			);
 			path = Octopus;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				25AC16381F433EAD00DEF29D /* SignInViewController.swift in Sources */,
 				25C160171F432D0C00A9D24A /* (null) in Sources */,
 				25AC16361F433E8500DEF29D /* PopUpViewController.swift in Sources */,
+				25464B981F49BBE100A9491B /* LawyerProfileViewController.swift in Sources */,
 				E398C7361F45BB2F009EA43A /* HeaderBalanceTableViewCell.swift in Sources */,
 				25C296C61F45D3DC00009E38 /* LawyerHomeTableViewCell.swift in Sources */,
 				25C160191F4338D800A9D24A /* ClientRegisterViewController.swift in Sources */,
