@@ -24,9 +24,9 @@ class LawyerHomeTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        imageBorderView.layer.cornerRadius = 30
-        profileImageView.layer.cornerRadius = 30
+
+        self.imageBorderView.layer.cornerRadius = 0.5 * imageBorderView.bounds.size.width
+        self.profileImageView.setRounded()
         
         // Required float rating view params
 //        self.ratingControl.emptyImage = UIImage(named: "StarEmpty")
