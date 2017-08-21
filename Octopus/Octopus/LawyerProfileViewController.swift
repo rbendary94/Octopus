@@ -12,6 +12,7 @@ import PageMenu
 
 class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
 
+    @IBOutlet var navBar: UINavigationBar!
     @IBOutlet var profileView: UIView!
     @IBOutlet weak var backgroundImageView: UIView!
     @IBOutlet weak var profilePicImg: UIImageView!
@@ -19,6 +20,7 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
     @IBOutlet weak var ratingController: FloatRatingView!
     @IBOutlet weak var totalCasesSolvedLabel: UILabel!
     @IBOutlet weak var totalQuestionsAnsweredLabel: UILabel!
+    var viewHeight:CGFloat = 0.0
     
    
     var pageMenu : CAPSPageMenu!
@@ -30,15 +32,19 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
         self.backgroundImageView.layer.cornerRadius = 0.5 * backgroundImageView.bounds.size.width
         self.profilePicImg.setRounded()
         styleButton()
+        
+        
+        self.navBar.barTintColor = UIColor(red: 57/255.0, green: 25/255.0, blue: 13/255.0, alpha: 1.0)
         // Initialize view controllers to display and place in array
         var controllerArray : [UIViewController] = []
         
         let laywerStoryboard = UIStoryboard(name: "Lawyer", bundle: nil)
-        let controllerOne = laywerStoryboard.instantiateViewController(withIdentifier: "LawyerReviews")
+        
+        let controllerOne = laywerStoryboard.instantiateViewController(withIdentifier: "LaywerAboutView") as! LawyerAboutViewController
         controllerOne.title = "About"
         controllerArray.append(controllerOne)
         
-        let controllertwo = laywerStoryboard.instantiateViewController(withIdentifier: "LawyerReviews")
+        let controllertwo = laywerStoryboard.instantiateViewController(withIdentifier: "LawyerReviews") as! LawyerReviewsViewController
         controllertwo.title = "Reviews"
         controllerArray.append(controllertwo)
         
@@ -46,19 +52,20 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
         // Customize menu (Optional)
         let parameters: [CAPSPageMenuOption] = [
             .menuItemSeparatorWidth(4.3),
-            .scrollMenuBackgroundColor(UIColor.white),
-            .viewBackgroundColor(UIColor(red: 247.0/255.0, green: 247.0/255.0, blue: 247.0/255.0, alpha: 1.0)),
-            .bottomMenuHairlineColor(UIColor(red: 20.0/255.0, green: 20.0/255.0, blue: 20.0/255.0, alpha: 0.1)),
-            .selectionIndicatorColor(UIColor(red: 18.0/255.0, green: 150.0/255.0, blue: 225.0/255.0, alpha: 1.0)),
+            .scrollMenuBackgroundColor(UIColor(red: 57/255.0, green: 25/255.0, blue: 13/255.0, alpha: 1.0)),
+            .viewBackgroundColor(UIColor(red: 57/255.0, green: 25/255.0, blue: 13/255.0, alpha: 1.0)),
+            .bottomMenuHairlineColor(UIColor(red: 239/255.0, green: 191/255.0, blue: 37/255.0, alpha: 1)),
+            .selectionIndicatorColor(UIColor(red: 239/255.0, green: 191/255.0, blue: 37/255.0, alpha: 1)),
             .menuMargin(20.0),
             .menuHeight(40.0),
-            .selectedMenuItemLabelColor(UIColor(red: 18.0/255.0, green: 150.0/255.0, blue: 225.0/255.0, alpha: 1.0)),
-            .unselectedMenuItemLabelColor(UIColor(red: 40.0/255.0, green: 40.0/255.0, blue: 40.0/255.0, alpha: 1.0)),
+            .selectedMenuItemLabelColor(UIColor(red: 239/255.0, green: 191/255.0, blue: 37/255.0, alpha: 1)),
+            .unselectedMenuItemLabelColor(UIColor(red: 135/255.0, green: 119/255.0, blue: 114/255.0, alpha: 1.0)),
             .menuItemFont(UIFont(name: "HelveticaNeue-Medium", size: 14.0)!),
             .useMenuLikeSegmentedControl(true),
-            .menuItemSeparatorRoundEdges(true),
+            .menuItemSeparatorRoundEdges(false),
             .selectionIndicatorHeight(2.0),
-            .menuItemSeparatorPercentageHeight(0.1)
+            .menuItemSeparatorPercentageHeight(0)
+            
             
             
         ]
@@ -66,10 +73,24 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
         // Initialize scroll menu
         pageMenu = CAPSPageMenu(viewControllers: controllerArray, frame: CGRect(x: 0.0, y: profileView.frame.maxY, width: self.view.frame.width, height: self.view.frame.height), pageMenuOptions: parameters)
         
+        
+        
+        viewHeight = self.view.frame.height - (profileView.frame.maxY + 40)
+        
+        profileView.backgroundColor = UIColor(red: 57/255.0, green: 25/255.0, blue: 13/255.0, alpha: 1.0)
+        
         // Optional delegate
         pageMenu!.delegate = self
         
         self.view.addSubview(pageMenu!.view)
+        
+        
+        print(viewHeight,"####")
+        
+        controllerOne.scrollViewHeigth.constant = viewHeight
+        
+        
+        
         
         // Do any additional setup after loading the view.
     }
@@ -84,6 +105,7 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
         if(index == 1){
             self.addButton.isHidden = false
             self.view.addSubview(addButton)
+
         }
         else{
             self.addButton.isHidden = true
@@ -91,10 +113,21 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
 
     }
     
+    func didMoveToPage(_ controller: UIViewController, index: Int) {
+        if(index == 1){
+            
+            let currentController = controller as! LawyerReviewsViewController
+            currentController.tableViewHeight.constant = viewHeight
+            
+            print("Chnaged height")
+            
+        }
+    }
+    
     func styleButton(){
         
         addButton.layer.cornerRadius = addButton.bounds.size.width * 0.5
-        addButton.backgroundColor = UIColor.init(red: 57/255, green: 25/255, blue: 13/255, alpha: 1)
+//        addButton.backgroundColor = UIColor.init(red: 57/255, green: 25/255, blue: 13/255, alpha: 1)
         addButton.tintColor = UIColor.white
         addButton.setImage(#imageLiteral(resourceName: "scale"), for: .normal)
         addButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)

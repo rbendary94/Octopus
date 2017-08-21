@@ -11,6 +11,7 @@ import UIKit
 class LawyerReviewsViewController: UIViewController, UITableViewDelegate , UITableViewDataSource {
 
     
+    @IBOutlet var tableViewHeight: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
     let reviews = ["Review 1", "Review 2" , "Review 3"]
 //    @IBOutlet weak var addFloatingButton: UIButton!

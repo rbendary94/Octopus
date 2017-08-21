@@ -31,6 +31,7 @@
 		E3751FF01F44467500674BB4 /* Lawyer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3751FEF1F44467500674BB4 /* Lawyer.storyboard */; };
 		E3751FF21F445C8E00674BB4 /* LawyerTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3751FF11F445C8E00674BB4 /* LawyerTabBarViewController.swift */; };
 		E3751FF41F445F6B00674BB4 /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3751FF31F445F6B00674BB4 /* ESTabBarController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E37AB03F1F4B0627001F83BB /* LawyerAboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37AB03E1F4B0627001F83BB /* LawyerAboutViewController.swift */; };
 		E398C7341F45BA2F009EA43A /* BalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E398C7331F45BA2F009EA43A /* BalanceTableViewCell.swift */; };
 		E398C7361F45BB2F009EA43A /* HeaderBalanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E398C7351F45BB2F009EA43A /* HeaderBalanceTableViewCell.swift */; };
 		E398C7381F45BC68009EA43A /* BalanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E398C7371F45BC68009EA43A /* BalanceTableViewController.swift */; };
@@ -63,6 +64,7 @@
 		E3751FEF1F44467500674BB4 /* Lawyer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Lawyer.storyboard; sourceTree = "<group>"; };
 		E3751FF11F445C8E00674BB4 /* LawyerTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerTabBarViewController.swift; sourceTree = "<group>"; };
 		E3751FF31F445F6B00674BB4 /* ESTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESTabBarController.framework; path = "Pods/../build/Release-iphoneos/ESTabBarController/ESTabBarController.framework"; sourceTree = "<group>"; };
+		E37AB03E1F4B0627001F83BB /* LawyerAboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LawyerAboutViewController.swift; sourceTree = "<group>"; };
 		E398C7331F45BA2F009EA43A /* BalanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTableViewCell.swift; sourceTree = "<group>"; };
 		E398C7351F45BB2F009EA43A /* HeaderBalanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderBalanceTableViewCell.swift; sourceTree = "<group>"; };
 		E398C7371F45BC68009EA43A /* BalanceTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalanceTableViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				25464B951F4993FD00A9491B /* LawyerReviewTableViewCell.swift */,
 				25464B971F49BBE100A9491B /* LawyerProfileViewController.swift */,
 				E3BBAD841F49D6FA008DB106 /* AddButtonsPopUpViewController.swift */,
+				E37AB03E1F4B0627001F83BB /* LawyerAboutViewController.swift */,
 			);
 			path = Octopus;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				25464B921F49818600A9491B /* LawyerQuestionTableViewCell.swift in Sources */,
 				25C296C41F45D1B400009E38 /* LawyerHomeViewController.swift in Sources */,
 				E3751FF21F445C8E00674BB4 /* LawyerTabBarViewController.swift in Sources */,
+				E37AB03F1F4B0627001F83BB /* LawyerAboutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

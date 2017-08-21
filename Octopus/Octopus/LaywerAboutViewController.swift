@@ -1,5 +1,5 @@
 //
-//  LawyerAboutViewController.swift
+//  LaywerAboutViewController.swift
 //  Octopus
 //
 //  Created by Nesreen Mamdouh on 8/21/17.
@@ -10,7 +10,6 @@ import UIKit
 
 class LawyerAboutViewController: UIViewController {
 
-    @IBOutlet var scrollViewHeigth: NSLayoutConstraint!
     @IBOutlet var scrollView: UIScrollView!
     override func viewDidLoad() {
         super.viewDidLoad()
