@@ -19,22 +19,17 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
     @IBOutlet weak var ratingController: FloatRatingView!
     @IBOutlet weak var totalCasesSolvedLabel: UILabel!
     @IBOutlet weak var totalQuestionsAnsweredLabel: UILabel!
-    let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+    
    
     var pageMenu : CAPSPageMenu!
     
+    @IBOutlet var addButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.ratingController.contentMode = UIViewContentMode.scaleAspectFit
         self.backgroundImageView.layer.cornerRadius = 0.5 * backgroundImageView.bounds.size.width
         self.profilePicImg.setRounded()
-
-        button.backgroundColor = .green
-        button.setTitle("Test Button", for: .normal)
-        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        button.isHidden = true
-        self.view.addSubview(button)
-
+        styleButton()
         // Initialize view controllers to display and place in array
         var controllerArray : [UIViewController] = []
         
@@ -76,8 +71,6 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
         
         self.view.addSubview(pageMenu!.view)
         
-        
-        
         // Do any additional setup after loading the view.
     }
 
@@ -86,24 +79,30 @@ class LawyerProfileViewController: UIViewController,CAPSPageMenuDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    
     func willMoveToPage(_ controller: UIViewController, index: Int) {
         if(index == 1){
-            print("review")
-            self.button.isHidden = false
-            
+            self.addButton.isHidden = false
+            self.view.addSubview(addButton)
         }
         else{
-            self.button.isHidden = true
-            
-            // hide button
+            self.addButton.isHidden = true
         }
 
     }
     
+    func styleButton(){
+        
+        addButton.layer.cornerRadius = addButton.bounds.size.width * 0.5
+        addButton.backgroundColor = UIColor.init(red: 57/255, green: 25/255, blue: 13/255, alpha: 1)
+        addButton.tintColor = UIColor.white
+        addButton.setImage(#imageLiteral(resourceName: "scale"), for: .normal)
+        addButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        addButton.isHidden = true
+        
+    }
 
     func buttonAction(sender: UIButton!) {
-        print("Button tapped")
-        
         let popOverVC = UIStoryboard(name: "Lawyer", bundle: nil).instantiateViewController(withIdentifier: "AddButtonsPopUp") as! AddButtonsPopUpViewController
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame

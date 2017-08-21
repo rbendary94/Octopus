@@ -14,7 +14,7 @@ class AddButtonsPopUpViewController: UIViewController {
     @IBOutlet var writeReviewBtn: UIButton!
     @IBOutlet var postCaseBtn: UIButton!
     @IBOutlet var askQuestionBtn: UIButton!
-   
+    var closePopUp = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,6 +37,8 @@ class AddButtonsPopUpViewController: UIViewController {
     @IBAction func closePopUp(_ sender: Any) {
         
         self.removeAnimate()
+        closePopUp = true
+        
     }
 
     /*

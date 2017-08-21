@@ -13,14 +13,10 @@ class LawyerReviewsViewController: UIViewController, UITableViewDelegate , UITab
     
     @IBOutlet weak var tableView: UITableView!
     let reviews = ["Review 1", "Review 2" , "Review 3"]
-    @IBOutlet weak var addFloatingButton: UIButton!
+//    @IBOutlet weak var addFloatingButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        addFloatingButton.layer.cornerRadius = 0.5 * addFloatingButton.bounds.size.width
-        self.view.addSubview(addFloatingButton)
-//        self.tableView.sizeToFit()
-//        self.tableView.ContentInset = UIEdgeInsets(0, 0, 0, 0);
-//        self.tableView.contentInset.bottom = 0
+
         // Do any additional setup after loading the view.
     }
 
@@ -48,12 +44,4 @@ class LawyerReviewsViewController: UIViewController, UITableViewDelegate , UITab
         return screenHeight / 4.0
     }
 
-    @IBAction func showPopUp(_ sender: Any) {
-        
-        let popOverVC = UIStoryboard(name: "Lawyer", bundle: nil).instantiateViewController(withIdentifier: "AddButtonsPopUp") as! AddButtonsPopUpViewController
-        self.addChildViewController(popOverVC)
-        popOverVC.view.frame = self.view.frame
-        self.view.addSubview(popOverVC.view)
-        popOverVC.didMove(toParentViewController: self)
-    }
 }
